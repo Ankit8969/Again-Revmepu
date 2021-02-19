@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+    <div class="message">
+        <h1>Thank You</h1>
+    </div>
+
+    <div class="cards" style="margin:0 auto; width: 400px;">
+        <div class="image-section">
+            <img src=<%=(card.imageLink).substring(1) %> alt="Image">
+        </div>
+        <div class="details">
+            <h3>
+                <%= card.heading %>
+            </h3>
+            <p class="dummy">
+                <%= card.dummy %>
+            </p>
+            <p class="project-detail">
+                <%= card.detail %>
+                    <a href="<%=card.github %>"
+                        style="color:red; font-weight: bold; text-decoration: underline;">View</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
